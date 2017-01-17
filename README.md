@@ -1,10 +1,10 @@
 # FiveReborn Server query
 ##### Allows you to query FiveReborn servers easily.
 
-##Installation:
+## Installation:
 `npm install fivereborn-query`
 
-##Usage:
+## Usage:
 
 ```javascript
 const fivereborn = require('fivereborn-query')

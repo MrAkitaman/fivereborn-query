@@ -56,6 +56,7 @@ function queryServer(ip, port, callback) {
 
   client.on('message', (message, remote) => {
     callback(false, parseData(message))
+    client.close()
   })
 
   client.send(req, 0, req.length, port, ip, (err) => {

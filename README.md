@@ -6,7 +6,7 @@
 
 ##Usage:
 
-```
+```javascript
 const fivereborn = require('fivereborn-query')
 
 fivereborn.query("255.255.255.255", 30120, (err, data) => {
@@ -20,7 +20,7 @@ fivereborn.query("255.255.255.255", 30120, (err, data) => {
 
 ### Output:
 
-```
+```javascript
 { maxclients: '24',
   clients: '0',
   challenge: 'xxx',

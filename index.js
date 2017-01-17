@@ -6,11 +6,11 @@ function parseData(buffer) {
 
   for (let i = 0; i < data.length; i += 2) {
     if (data[i] == 'sv_maxclients') {
-      server['maxclients'] = data[i + 1]
+      server['maxclients'] = Number(data[i + 1])
     }
 
     if (data[i] == 'clients') {
-      server['clients'] = data[i + 1]
+      server['clients'] = Number(data[i + 1])
     }
 
     if (data[i] == 'challenge') {
@@ -38,7 +38,7 @@ function parseData(buffer) {
     }
 
     if (data[i] == 'iv') {
-      server['iv'] = data[i + 1]
+      server['iv'] = Number(data[i + 1])
     }
   }
 

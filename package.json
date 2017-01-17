@@ -1,0 +1,11 @@
+{
+  "name": "fivereborn-query",
+  "version": "1.0.0",
+  "description": "A module to query FiveReborn servers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liquid <liquid@l1q.pw>",
+  "license": "ISC"
+}

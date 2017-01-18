@@ -21,13 +21,13 @@ fivereborn.query("255.255.255.255", 30120, (err, data) => {
 ### Output:
 
 ```javascript
-{ maxclients: '24',
-  clients: '0',
+{ maxclients: 24,
+  clients: 0,
   challenge: 'xxx',
   gamename: 'GTA5',
   protocol: 4,
   hostname: 'Test FiveReborn Server',
   gametype: 'Freeroam',
   mapname: 'fivem-map-skater',
-  iv: '-1688173451' }
+  iv: -1688173451 }
 ```

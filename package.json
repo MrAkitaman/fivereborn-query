@@ -1,6 +1,6 @@
 {
   "name": "fivereborn-query",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A module to query FiveReborn servers.",
   "main": "index.js",
   "scripts": {

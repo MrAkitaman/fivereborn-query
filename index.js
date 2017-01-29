@@ -26,7 +26,7 @@ function parseData(buffer) {
     }
 
     if (data[i] == 'hostname') {
-      server['hostname'] = data[i + 1].replace(/\^[0-9]/, '')
+      server['hostname'] = data[i + 1].replace(/\^[0-9]/g, '')
     }
 
     if (data[i] == 'gametype') {

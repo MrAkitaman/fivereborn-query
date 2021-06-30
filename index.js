@@ -5,43 +5,8 @@ function parseData(buffer) {
   const server = {}
 
   for (let i = 0; i < data.length; i += 2) {
-    if (data[i] == 'sv_maxclients') {
-      server['maxclients'] = Number(data[i + 1])
-    }
-
-    if (data[i] == 'clients') {
-      server['clients'] = Number(data[i + 1])
-    }
-
-    if (data[i] == 'challenge') {
-      server['challenge'] = data[i + 1]
-    }
-
-    if (data[i] == 'gamename') {
-      server['gamename'] = data[i + 1]
-    }
-
-    if (data[i] == 'protocol') {
-      server['protocol'] = Number(data[i + 1])
-    }
-
-    if (data[i] == 'hostname') {
-      server['hostname'] = data[i + 1].replace(/\^[0-9]/g, '')
-    }
-
-    if (data[i] == 'gametype') {
-      server['gametype'] = data[i + 1]
-    }
-
-    if (data[i] == 'mapname') {
-      server['mapname'] = data[i + 1]
-    }
-
-    if (data[i] == 'iv') {
-      server['iv'] = Number(data[i + 1])
-    }
+    server[data[i]] = Number(data[i + 1])
   }
-
   return server
 }
 
